@@ -1,0 +1,9 @@
+Dependencias:
+  -express
+  -mongoose: conectar node con mongodb.Debe tener instalado mongodb.
+  -ejs-mate: Motor de plantillas.
+  -connect-flash: Enviar mensajes entre multiples páginas. Ejemplo, sí un usuario se loguea, la siguiente página debe saber que esta logueado.
+  -morgan: Para ver lo que los clientes estan pidiendo.
+  -passport: Para la autenticación.
+  -passport-local: Haremos la autenticación con passport, pero tambien haremos la autenticación desde nuestro server.
+  -bcrypt-nodejs: Cifrar nuestra contraseña.
