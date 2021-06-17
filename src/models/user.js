@@ -8,12 +8,10 @@ const userSchema = new Schema({
 });
 
 userSchema.methods.encryptPassword = (password) => {
-  //Le colocamos al metodo encryptPassword, pero puede ser cualquier nombre
-  return bcrypt.hashSync(password, 10); //Para que no de warning, debemos usar los metodos asincronos
+  return bcrypt.hashSync(password, 10);
 };
 
 userSchema.methods.comparePassword = function (password) {
-  //Lo hacemos con una función tipica, porque necesitamos usar this
   return bcrypt.compareSync(password, this.password);
 };
 
